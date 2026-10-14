@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support – Distill</title>
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap narrow">
+  <header class="top">
+    <a class="brand" href="./"><img src="img/icon-256.png" alt="">Distill</a>
+    <nav class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+  <article>
+    <h1>Support</h1>
+    <p class="meta">Help with Distill, the file converter for Mac</p>
+    <p>Something not working, or an idea for a format Distill should handle? <a href="https://github.com/mfrports/distill-app/issues/new">Write to us</a> (a free GitHub account is needed) – every message is read. Please say which file type you used and what you expected.</p>
+
+    <h2>Questions</h2>
+    <details><summary>Why does macOS ask me to allow a folder?</summary>
+      <p>Apps from the App Store run in a sandbox: they may only save where you have said they can. The first time Distill saves results next to your files in a folder, macOS shows a folder window opened on that folder – click <strong>Allow</strong>. Distill remembers it, for that folder and everything inside it. To avoid the question entirely, choose <strong>Downloads</strong> or a folder of your own under <strong>Save to</strong>.</p></details>
+    <details><summary>Where do my converted files go?</summary>
+      <p>Next to the originals, unless you choose another place under <strong>Save to</strong>. Nothing is ever overwritten: a name that is taken gets a number, and a file kept in its format is saved as “name (compressed)”. Double-click a finished file to open it, or drag it straight into Mail or a folder.</p></details>
+    <details><summary>How does Distill know the size before converting?</summary>
+      <p>It converts each file for real in the background, at low priority, and measures the result (for video and sound, a few seconds are converted and the size is scaled to the whole length). The estimate pauses while a real conversion runs.</p></details>
+    <details><summary>What does the size limit do?</summary>
+      <p>Each file is fitted under the limit: first by lowering the quality, then by making pictures and video smaller in pixels. Files already under the limit stay as small as the chosen quality makes them. Lossless formats (such as FLAC, TIFF or ZIP) cannot be squeezed this way.</p></details>
+    <details><summary>Can Distill convert Excel, PowerPoint, Pages, Numbers or Keynote files?</summary>
+      <p>Not into other formats – those need their own apps. Distill can pack them into ZIP or 7z archives. Word documents (.docx and .doc) are converted to PDF, RTF, OpenDocument, HTML or text.</p></details>
+    <details><summary>Which video formats play everywhere?</summary>
+      <p><strong>MP4 · H.264</strong> plays on almost anything. <strong>MP4 · HEVC</strong> (the default) is smaller and plays on Apple devices and most modern ones. <strong>MP4 · AV1</strong> is the smallest, for newer devices and browsers.</p></details>
+    <details><summary>Does Distill remove photo locations?</summary>
+      <p>Turn off <strong>Personal details</strong> and Distill removes location, camera details and dates from pictures and video. The colour profile always stays.</p></details>
+    <details><summary>Which Macs does Distill run on?</summary>
+      <p>Macs with Apple silicon, running macOS 26 or later.</p></details>
+  </article>
+</div>
+<footer>
+  <div class="wrap narrow">
+    <span>© 2026 Erik Muffler</span>
+    <nav><a href="./">Distill</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="open-source.html">Open-source components</a></nav>
+  </div>
+</footer>
+</body>
+</html>

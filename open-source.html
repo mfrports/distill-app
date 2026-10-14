@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open-source components – Distill</title>
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap narrow">
+  <header class="top">
+    <a class="brand" href="./"><img src="img/icon-256.png" alt="">Distill</a>
+    <nav class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+  <article>
+    <h1>Open-source components</h1>
+    <p class="meta">The engines inside Distill, their licences and their source</p>
+    <p>Distill runs these programs, which are included in the app (in <code>Distill.app/Contents/Helpers</code>, with their licences in <code>Contents/Resources/Engines</code>). Our thanks to everyone who makes them.</p>
+
+    <h2>FFmpeg (video and sound)</h2>
+    <p>FFmpeg 9.0.2, used under the <strong>GNU Lesser General Public License 2.1 or later</strong>, built for Distill without any GPL or non-free parts. The exact sources, the build script and the checksums used to build it are here:</p>
+    <table>
+      <tr><th>Component</th><th>Licence</th><th>Source</th></tr>
+      <tr><td>FFmpeg 9.0.2</td><td>LGPL 2.1+</td><td><a href="https://github.com/mfrports/distill-app/releases/tag/engines-1.0">Download (our copy)</a> · <a href="https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz">ffmpeg.org</a></td></tr>
+      <tr><td>LAME 4.0 (MP3)</td><td>LGPL 2+</td><td><a href="https://github.com/mfrports/distill-app/releases/tag/engines-1.0">Download (our copy)</a> · <a href="https://lame.sourceforge.io">lame.sourceforge.io</a></td></tr>
+      <tr><td>SVT-AV1 4.2.0</td><td>BSD 3-Clause Clear, AOM patent licence</td><td><a href="https://gitlab.com/AOMediaCodec/SVT-AV1">gitlab.com/AOMediaCodec/SVT-AV1</a></td></tr>
+      <tr><td>dav1d 1.5.4</td><td>BSD 2-Clause</td><td><a href="https://code.videolan.org/videolan/dav1d">code.videolan.org</a></td></tr>
+      <tr><td>Opus 1.6.1, libogg 1.3.6, libvorbis 1.3.7</td><td>BSD 3-Clause</td><td><a href="https://xiph.org/downloads/">xiph.org</a></td></tr>
+      <tr><td>libwebp 1.6.0</td><td>BSD 3-Clause</td><td><a href="https://chromium.googlesource.com/webm/libwebp">chromium.googlesource.com</a></td></tr>
+      <tr><td>zimg 3.0.6</td><td>WTFPL</td><td><a href="https://github.com/sekrit-twc/zimg">github.com/sekrit-twc/zimg</a></td></tr>
+    </table>
+    <p>The <a href="https://github.com/mfrports/distill-app/releases/tag/engines-1.0">engines release</a> also holds <code>build-ffmpeg.sh</code> and <code>engines.env</code>, which rebuild the same FFmpeg from these sources. You may replace the <code>ffmpeg</code> and <code>ffprobe</code> programs in your copy of Distill with your own build.</p>
+
+    <h2>libvips (pictures)</h2>
+    <p>libvips 8.18.7 as packaged by <a href="https://github.com/lovell/sharp-libvips">sharp-libvips 1.3.4</a>, used under the <strong>GNU LGPL 2.1 or later</strong>, together with the libraries it lists (among them glib, libheif, librsvg, libexif and fribidi under the LGPL, and others under BSD, MIT and similar licences). Sources: <a href="https://github.com/libvips/libvips">github.com/libvips/libvips</a> and <a href="https://github.com/lovell/sharp-libvips">github.com/lovell/sharp-libvips</a>.</p>
+
+    <h2>7-Zip (archives)</h2>
+    <p>7-Zip 26.04 by Igor Pavlov, used under the <strong>GNU LGPL</strong>, with the unRAR licence restriction for its RAR code (it may not be used to re-create the RAR compression algorithm). Source: <a href="https://www.7-zip.org">7-zip.org</a>.</p>
+
+    <h2>Written offer</h2>
+    <p>For at least three years from the last time we distribute a version of Distill, we will provide anyone with the complete corresponding source code of any LGPL-licensed component in that version, on request, for no more than the cost of providing it. <a href="https://github.com/mfrports/distill-app/issues/new">Ask here</a>.</p>
+  </article>
+</div>
+<footer>
+  <div class="wrap narrow">
+    <span>© 2026 Erik Muffler</span>
+    <nav><a href="./">Distill</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="open-source.html">Open-source components</a></nav>
+  </div>
+</footer>
+</body>
+</html>
